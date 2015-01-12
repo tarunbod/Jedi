@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="Jedi">
+    <output-path>$PROJECT_DIR$/out/artifacts/Jedi</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="me.javaftw.jedi.application.Jedi" />
+        <option name="description" value="" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="Jedi" />
+        <option name="vendor" value="Tarun Boddupalli" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Jedi.jar">
+        <element id="module-output" name="Jedi" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
