@@ -24,7 +24,7 @@
  * THE SOFTWARE.
  */
 
-package me.javaftw.jedi.application;
+package me.tarunb.jedi;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;

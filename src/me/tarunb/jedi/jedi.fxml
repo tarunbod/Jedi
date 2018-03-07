@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane style="-fx-font-family: Dosis; -fx-font-size: 16px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.javaftw.jedi.application.Controller">
+<AnchorPane style="-fx-font-family: Dosis; -fx-font-size: 16px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.tarunb.jedi.Controller">
    <children>
       <VBox alignment="CENTER" spacing="10.0">
          <children>

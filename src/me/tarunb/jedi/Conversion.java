@@ -1,20 +1,20 @@
 /**
- * Jedi by Tarun Boddupalli
- *
+ * Jedi
+ * <p>
  * The MIT License (MIT)
- *
- * Copyright (c) 2014 Tarun Boddupalli
- *
+ * <p>
+ * Copyright (c) 2018 Tarun Boddupalli
+ * <p>
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- *
+ * <p>
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- *
+ * <p>
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -23,27 +23,37 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+package me.tarunb.jedi;
 
-package me.javaftw.jedi.application;
+public class Conversion {
+    private String inputFile, outputFile;
 
-import java.io.File;
-import java.util.Arrays;
-import java.util.List;
-
-public class ConvertibleFile {
-
-    public static final List<String> ALLOWED_FILE_EXTS = Arrays.asList(
-
-    ); // TODO add the file extensions
-
-    private final File inputFile;
-    private final ConversionType conversionType;
-    private final int duration;
-
-    public ConvertibleFile(File inputFile, ConversionType conversionType, int duration) {
+    public Conversion(String inputFile, String outputFile) {
         this.inputFile = inputFile;
-        this.conversionType = conversionType;
-        this.duration = duration;
+        this.outputFile = outputFile;
     }
 
+    public String getInputFile() {
+        return inputFile;
+    }
+
+    public void setInputFile(String inputFile) {
+        this.inputFile = inputFile;
+    }
+
+    public String getOutputFile() {
+        return outputFile;
+    }
+
+    public void setOutputFile(String outputFile) {
+        this.outputFile = outputFile;
+    }
+
+    @Override
+    public String toString() {
+        return "Conversion{" +
+                "inputFile='" + inputFile + '\'' +
+                ", outputFile='" + outputFile + '\'' +
+                '}';
+    }
 }
